@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxeqr2t6vwm6i"]
+
+[ext_resource type="Theme" uid="uid://buy27cde4xixp" path="res://Buttons.tres" id="1_2djsi"]
+[ext_resource type="Script" path="res://Scenesenderbutton.gd" id="2_200mr"]
+
+[sub_resource type="Theme" id="Theme_xmtw2"]
+Label/colors/font_color = Color(0.541176, 0.541176, 0.541176, 1)
+
+[node name="Controlmain" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 280.0
+offset_right = 623.0
+offset_bottom = 383.0
+theme = ExtResource("1_2djsi")
+text = "Start"
+script = ExtResource("2_200mr")
+sendto = "res://Levelselect.tscn"
+overwrite = true
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 472.0
+offset_right = 679.0
+offset_bottom = 575.0
+theme = ExtResource("1_2djsi")
+text = "Options"
+script = ExtResource("2_200mr")
+sendto = "res://Options.tscn"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 128.0
+offset_right = 649.0
+offset_bottom = 151.0
+theme = SubResource("Theme_xmtw2")
+text = "This is the name of your game"

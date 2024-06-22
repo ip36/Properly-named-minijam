@@ -1,0 +1,15 @@
+res://Player.tscn
+res://Buttons.tres
+res://Gun.gd
+res://Player.gd
+res://Projectile.gd
+res://Verticalenemy.gd
+res://coin.tscn
+res://gui.tscn
+res://Main.tscn
+res://Options.tscn
+res://Start.tscn
+res://Levelselect.tscn
+res://Projectile.tscn
+res://gun.gd
+res://upgradesmanager.gd
